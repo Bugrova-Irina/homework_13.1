@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "homework-13-1"
+version = "0.1.0"
+description = ""
+authors = ["Bugrova Irina <bugrova147@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "homework_13"}]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+pandas = "^2.2.3"
+
+
+[tool.poetry.group.lint.dependencies]
+black = "^24.10.0"
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+mypy = "^1.13.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
