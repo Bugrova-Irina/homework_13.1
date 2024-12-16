@@ -3,7 +3,7 @@ import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 file_handler = logging.FileHandler(
-    "..//homework_12.2/logs/masks.log", "w", encoding="utf-8"
+    "..//homework_13.1/logs/masks.log", "w", encoding="utf-8"
 )
 file_formatter = logging.Formatter(
     "%(asctime)s - %(filename)s - %(levelname)s: %(message)s"
