@@ -55,7 +55,7 @@ def get_amount(transaction: dict[str, Any]) -> float:
 
 
 if __name__ == "__main__":
-    result = get_transactions("../homework_12.1/data/operations.json")
+    result = get_transactions("../homework_13.1/data/operations.json")
 
     transaction_item = generate_transaction(result)
 

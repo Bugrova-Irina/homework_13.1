@@ -6,7 +6,7 @@ from typing import Any
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 file_handler = logging.FileHandler(
-    "..//homework_12.2/logs/utils.log", "w", encoding="utf-8"
+    "..//homework_13.1/logs/utils.log", "w", encoding="utf-8"
 )
 file_formatter = logging.Formatter(
     "%(asctime)s - %(filename)s - %(levelname)s: %(message)s"
@@ -45,7 +45,7 @@ def generate_transaction(transactions: list[dict[str, Any]]) -> list[dict[str, A
 
 
 if __name__ == "__main__":
-    result = get_transactions("../homework_12.2/data/operations.json")
+    result = get_transactions("../homework_13.1/data/operations.json")
     print(result)
 
     if not result:
