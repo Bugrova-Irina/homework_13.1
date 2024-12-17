@@ -24,7 +24,7 @@ def get_transactions_xlsx(df: pd.DataFrame) -> list[dict[str, Any]]:
 
 
 if __name__ == "__main__":
-    result = get_transactions_csv("transactions.csv")
-    result2 = get_transactions_xlsx("transactions_excel.xlsx")
-    print(result)
+    # result = get_transactions_csv("transactions.csv")
+    result2 = get_transactions_xlsx("transactions_excel1.xlsx")
+    # print(result)
     print(result2)

@@ -108,3 +108,21 @@ def test_get_bad_transactions_xlsx(mock_pd_read_excel, mock_bad_xls):
     result = get_transactions_xlsx("transactions_excel.xlsx")
     expected_result = mock_bad_xls.to_dict(orient="records")
     assert result == expected_result
+
+
+def test_error_csv():
+    """тестирует ошибку обработки csv-файла"""
+    result = get_transactions_csv("transactions1.csv")
+    assert (
+        result
+        == "Произошла ошибка [Errno 2] No such file or directory: 'transactions1.csv'"
+    )
+
+
+def test_error_xlsx():
+    """тестирует ошибку обработки xlsx-файла"""
+    result = get_transactions_xlsx("transactions_excel1.xlsx")
+    assert (
+        result
+        == "Произошла ошибка [Errno 2] No such file or directory: 'transactions_excel1.xlsx'"
+    )
